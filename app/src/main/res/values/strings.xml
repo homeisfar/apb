@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">APB</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="about_page">Austin Pets Bulletin was created by Larry Liu, Thien Vo, and Ali Homafar</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About Us</string>
+    <string name="aac_contact_info">For more information about this animal, call:
+                                    Austin Animal Center at (512) 978-0500</string>
+    <string name="animal_image_prefix">http://www.petharbor.com</string>
+    <string name="soda_endpoint">https://data.austintexas.gov/resource/kz4x-q9k5.json</string>
+    <string name="soda_token">sb3OofqQ9zQqC9N4iKRAFFT2L</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="google_key">AIzaSyAplMsKqu5nt6C10JMw3Bqx27iScOdd2fA</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+
+    <string name="terms_text">
+        <![CDATA[AUSTIN PETS BULLETIN 2015\n
+        The writers of this app are not affiliated with the City of Austin or the Austin Animal Shelter.\n\n
+
+            Austin Pets Bulletin uses the following 3rd party libraries: \n
+             Gson \n
+             Butterknife \n
+             Jsoup \n
+             Realm \n
+             Otto \n
+             Picasso \n
+
+             github.markushi:circlebutton \n
+             github.traex:RippleEffect \n
+             github.castorflex.smoothprogressbar \n\n
+
+             This app is a student project at the University of Texas, created for educational purposes.
+             It is not meant for wide distribution, and we do not mean any legal copyright infringement.
+        ]]>
+    </string>
+</resources>

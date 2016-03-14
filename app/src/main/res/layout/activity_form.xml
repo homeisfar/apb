@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_color="@color/ColorPrimary"
+        app:spb_speed="2.0"
+        app:spb_stroke_width="4dp"
+        app:spb_stroke_separator_length="6dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.5"
+        app:spb_progressiveStop_speed="3.4"
+
+        />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="#F1A9A0">
+
+
+        <ImageSwitcher
+            android:id="@+id/imageswither"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:padding="30dp" />
+
+        <ImageButton
+            android:id="@+id/left_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="left|center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_button" />
+
+        <ImageButton
+            android:id="@+id/right_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_button" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/frameLayout"
+        android:background="#F1A9A0">
+
+        <ImageSwitcher
+            android:id="@+id/imageswither2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:padding="30dp" />
+
+        <ImageButton
+            android:id="@+id/left_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="left|center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_button" />
+
+        <ImageButton
+            android:id="@+id/right_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_button" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameLayout2"
+        android:background="#95A5A6">
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/search_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:padding="30dp"
+            android:src="@drawable/paw"
+            app:cb_color="#6C7A89"
+            app:cb_pressedRingWidth="20dip" />
+
+    </FrameLayout>
+</RelativeLayout>

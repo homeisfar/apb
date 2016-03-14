@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "tla.apb"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    compile("com.android.support:recyclerview-v7:21.0.+") {
+        exclude group: 'com.android.support'
+    }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.jakewharton:butterknife:5.1.2'
+    compile 'org.jsoup:jsoup:1.8.2'
+    compile 'com.github.markushi:circlebutton:1.1'
+    compile 'com.github.traex:RippleEffect:v1.2.4'
+    compile 'io.realm:realm-android:0.80.1'
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    compile 'com.squareup:otto:1.3.6'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
